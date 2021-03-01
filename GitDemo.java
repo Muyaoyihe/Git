@@ -1,5 +1,5 @@
 /*****
- * Edit this line to have your name.
+* Edit this line to have your name.
  ******/
 public class GitDemo {
     
@@ -14,7 +14,8 @@ public class GitDemo {
     *****/
     public double addNumber(double num) {
         System.out.print("Add num to previousNumber");
-        return 0;
+        previousNumber = previousNumber + num;
+        return previousNumber;
     }
     
     /*****
@@ -23,15 +24,13 @@ public class GitDemo {
      *  the function will return the value of (1 * 2 * 3 * 4)
      *****/
     public double findFactorial(int num) {
-        double factorialNumber = 0;
+        double newNumber = 1;
         
-        while( num != 0 ) {
-            double temp = num % 10;
-            factorialNumber = factorialNumber * 10 + temp;
-            num /= 10;
+        for(int i = 1; i <= num; ++i){
+            newNumber = newNumber * i;
         }
         
-        return factorialNumber;
+        return newNumber;
     }
     
     /*****
@@ -40,13 +39,16 @@ public class GitDemo {
      *  the function will return 4321
      *****/
     public double reverseNumber(int num){
-        double newNumber = 1;
+        double factorialNumber = 0;
         
-        for(int i = 1; i <= num; ++i){
-            newNumber = newNumber * i;
+        while( num != 0 ) {
+            double temp = num % 10;
+            factorialNumber = factorialNumber * 10 + temp;
+            num /= 10;
         }
+      
+        return factorialNumber;
         
-        return newNumber;
     }
     
 }
