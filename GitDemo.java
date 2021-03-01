@@ -1,9 +1,10 @@
 /*****
-* Edit this line to have your name.
+Muyaoyi He
  ******/
 public class GitDemo {
     
     private double previousNumber;
+    private double reverseNum;
     
     public GitDemo() {
         previousNumber = 1;
@@ -29,7 +30,7 @@ public class GitDemo {
         for(int i = 1; i <= num; ++i){
             newNumber = newNumber * i;
         }
-        
+        reverseNum = newNumber;
         return newNumber;
     }
     
